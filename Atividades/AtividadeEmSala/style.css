@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #7f8c8d;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tefone"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tefone"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+fieldset.section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+fieldset.section legend {
+    font-size: 16px;
+    color: #f39c12;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between each option */
+}
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    font-weight: normal;
+    color: #333;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px; /* Space between the button and the label */
+}
+
+label.inline {
+    display: inline;
+    font-weight: normal;
+    color: #333;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    margin: 0;
+    line-height: 1;
+    font-size: 16px; /* Adjust this to match your design */
+    color: #333; /* Ensure it matches your overall theme */
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d9790a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Additional Styling for Input Groups */
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #7f8c8d;
+    font-size: 18px;
+}
+
+input[type="text"].grouped,
+input[type="email"].grouped,
+input[type="password"].grouped {
+    border: none;
+    background: none;
+    width: 100%;
+    outline: none;
+}

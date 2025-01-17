@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioContato.pdf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    
+    <form>
+        <label for="fullname"><strong> Nome e sobrenome</strong></label>
+        <input type="text" id="text" name="fullname">
+        <label for="email"><strong>E-mail</strong></label>
+        <input type="email" id="text" name="email" placeholder="seuemail@dominio.com">
+        <label for="telefone"><strong>Telefone</strong></label>
+        <input type="tefone" id="text" name="telefone" placeholder="(XX) X XXXX-XXXX">
+        <label for="message"><strong>Mensagem</strong></label>
+        <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
+        
+        <fieldset class="section">
+          <legend>Como prefere o nosso contato?</legend>
+          <div class="radio-group">
+              <label>
+                  <input type="radio" name="contato" id="email">
+                  E-mail
+              </label>
+              <label>
+                  <input type="radio" name="contato" id="telefone">
+                  Telefone
+              </label>
+              <label>
+                  <input type="radio" name="contato" id="whatsapp">
+                  Whatsapp
+              </label>
+          </div>
+        </fieldset>
+      
+        <fieldset class="section">
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select name="horario" id="horario">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+            </select>
+        </fieldset>
+
+        <div class="checkbox-group">
+          <input type="checkbox" name="newsletter" id="newsletter">
+          <label for="newsletter">Gostaria de receber nossas novidades por e-mail?</label>
+        </div>
+
+        <button type="button" id="button">Enviar formulário</button>
+
+        <table>
+            <tr>
+              <th>Dia</th>
+              <th>Horário</th>
+            </tr>
+            <tr>
+              <td>Segunda</td>
+              <td>8 - 20H</td>
+            </tr>
+            <tr>
+              <td>Terça</td>
+              <td>8 - 20H</td>
+            </tr>
+            <tr>
+               <td>Quarta</td>
+               <td>8 - 20H</td>
+            </tr>
+            <tr>
+               <td>Quinta</td>
+               <td>8 - 20H</td>
+            </tr>
+            <tr>
+               <td>Sexta</td>
+               <td>8 - 20H</td>
+            </tr>
+        </table> 
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Evita barra de rolagem horizontal */
+}
+
+header {
+    background-color: #f7931e;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.content-container {
+    display: flex;
+    gap: 2em;
+    max-width: 1200px;
+    width: 100%; /* Garante que se ajuste ao monitor */
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.content-block {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px; /* Limita a largura dos blocos */
+    background-color: #fff7e6;
+    border: 1px solid #f7931e;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-block h2 {
+    color: #f7931e;
+    margin-bottom: 1em;
+}
+
+/* Estilo dos links */
+.content-block a {
+    color: #f7931e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.content-block a:hover {
+    color: #d97900;
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f7931e;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative; /* Evita sobreposição */
+    bottom: 0;
+    width: 100%;
+}

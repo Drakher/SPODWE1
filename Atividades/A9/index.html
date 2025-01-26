@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Border Radius Visualization
+    </header>
+
+    <main>
+        <div class="square-container">
+            <div id="square"></div>
+        </div>
+
+        <div class="controls">
+            <div class="control">
+                <label for="top-left">Canto superior esquerdo:</label>
+                <input type="range" id="top-left" min="0" max="50" value="20">
+                <span id="top-left-value">20%</span>
+            </div>
+            <div class="control">
+                <label for="top-right">Canto superior direito:</label>
+                <input type="range" id="top-right" min="0" max="50" value="20">
+                <span id="top-right-value">20%</span>
+            </div>
+            <div class="control">
+                <label for="bottom-left">Canto inferior esquerdo:</label>
+                <input type="range" id="bottom-left" min="0" max="50" value="20">
+                <span id="bottom-left-value">20%</span>
+            </div>
+            <div class="control">
+                <label for="bottom-right">Canto inferior direito:</label>
+                <input type="range" id="bottom-right" min="0" max="50" value="20">
+                <span id="bottom-right-value">20%</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Atividade 9 - WEB - IFSP
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilo do header */
+header {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+button.styled-button {
+    background-color: #ff7f32; /* Cor laranja */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover para os botões */
+button.styled-button:hover {
+    background-color: #ff5f00; /* Laranja mais escuro */
+}
+
+/* Estilo para o container dos botões */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo do footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}

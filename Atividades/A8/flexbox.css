@@ -1,0 +1,118 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;  /* Alinha horizontalmente no centro */
+    align-items: center;      /* Alinha verticalmente no centro */
+    min-height: 100vh;        /* Garantir que a altura mínima seja 100vh */
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    overflow-y: auto;         /* Permite rolagem vertical caso o conteúdo ultrapasse a altura da tela */
+}
+
+/* Estilo da faixa laranja no título */
+header {
+    background-color: #ff7f32; /* Faixa laranja */
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Container para o formulário */
+.form-container {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Estilo das perguntas (itens de lista) */
+ol {
+    list-style-type: decimal;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Estilo de cada item da lista (pergunta) */
+ol li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center; /* Alinha o número e o texto */
+    gap: 10px;           /* Adiciona um espaçamento entre o número e o texto */
+}
+
+/* Estilo do número nas respostas */
+ol li::marker {
+    color: #ff7f32; /* Número laranja */
+}
+
+/* Efeito de hover para os itens da lista */
+ol li:hover {
+    background-color: #ff7f32; /* Laranja ao passar o mouse */
+    color: white;
+}
+
+ol li:hover::marker {
+    color: white; /* Deixa o número branco no hover */
+}
+
+/* Estilo do footer */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+/* Estilo do botão */
+button.styled-button {
+    background-color: #ff7f32; /* Cor laranja */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover para os botões */
+button.styled-button:hover {
+    background-color: #ff5f00; /* Laranja mais escuro */
+}
+
+/* Estilo para o container dos botões */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
